@@ -1,6 +1,8 @@
 # ThreeJS-WebGIS
 An 3D WebGIS App.
 
+http://haozzzzzzzz.github.io/ThreeJS-WebGIS
+
 <div>
 	<h3>屏幕截图</h3>
 	<img src="./screenshot/showterrain.jpg"></img>
