@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!-- 
+author : luo hao
+data : 2013/12/20
+copyright : luo hao 
+url : http://haozi.freetzi.com
+-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>3D WebGIS Viewer (beta) | luo hao 2013</title>
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<script type="text/javascript" src="./js/jquery-1.6.4.js"></script>
+		<script type="text/javascript" src="./js/three.min.js"></script>
+		<script type="text/javascript" src="./js/loader.js"></script>
+		<script type="text/javascript" src="./js/viewer.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+		<base target="_blank"></base>
+	</head>
+	<body>
+		<div id="menubar">
+			<ul>
+				<li class="menu">
+					<div class="title">File</div>
+					<ul class="options">
+						<li id="import">
+							<font>import</font>
+						</li>
+						<li id="loadTexture"><font>load texture</font></li>
+						<li id="reload">
+							<font>reload</font>
+						</li>
+						<li id="exit">
+							<font>exit</font>
+						</li>
+					</ul>
+				</li>
+				<li class="menu">
+					<div class="title">Sam</div>
+					<ul class="options">
+						<li id="example-cube"><font>cube</font></li>
+						<li id="example-terrain"><font>terrain(36MB)</font></li>
+					</ul>
+				</li>
+				<li class="menu">
+					<div class="title">View</div>
+					<ul class="options">
+						<li id="info"><font>scene info</font></li>
+					</ul>
+				</li>
+				<li class="menu">
+					<div class="title" id="about">About</div>
+				</li>
+			</ul>
+			<div class="name">3D WebGIS Viewer (beta) | luo hao 2013</div>
+		</div>
+		<div id="toolbar">
+			<img src="./img/fullscreen.png" id="fullscreen"/>
+			<select id="meshSelect">
+				<option value = '1'>线框</option>
+				<option value = '2' selected = "true">前面</option>
+				<option value = '3'>后面</option>
+				<option value = '4'>双面</option>
+			</select>
+
+			<div id="loading"><font>loading ... </font></div>
+		</div>
+		<div id="sidebar">
+			<img src="./img/close.png" class="close"/>
+			<font>Scene Information</font>
+			<ul>
+				<li>
+					<div>Vertices : </div><div id="vertices"></div>
+				</li>
+				<li>
+					<div>Faces : </div><div id="faces"></div>
+				</li>
+			</ul>
+		</div>
+		<div id="viewport"></div>
+		<div id="aboutpage">
+			<a href="http://haozi.freetzi.com">
+				<div>
+					<img src="./img/me.jpg">
+					<h1>luo hao</h1>
+				</div>
+			</a>
+		</div>
+	</body>
+</html>

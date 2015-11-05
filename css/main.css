@@ -1,0 +1,182 @@
+
+/*
+	author : luo hao
+	date : 2013/12/20
+	copyright : luo hao
+	url : http://haozi.freetzi.com
+*/
+
+*{margin: 0;}
+a{text-decoration: none;color: black;}
+html,body
+{
+	width: 100%;
+	height: 100%;
+	font-family: "Segoe UI Light","Segoe UI Semibold","Open Sans";
+	overflow: hidden;
+}
+#menubar
+{
+	width: 100%;
+	height: 32px;
+	background: #eee;
+}
+#viewport
+{
+	position: absolute;
+	top: 32px;
+	left: 0px;
+	right: 0px;
+	bottom: 32px;
+	background: #aaaaaa;
+}
+#toolbar
+{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	height: 32px;
+	background: #eee;
+}
+
+ul,ul li
+{
+	list-style-type: none;
+	float: left;
+	padding: 0px;
+}
+.menu
+{
+	cursor: pointer;
+	width: 50px;
+	padding-top: 5px;
+}
+
+.menu .title,font
+{
+	padding-left: 10px;
+}
+.title
+{
+	width: 50px;
+}
+.name
+{
+	float:right;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+.options
+{
+	margin-top:6px;
+	position: relative;
+	z-index: 10;
+	background: #eee;
+	display: none;
+}
+.options li
+{
+	height: 32px;
+	width: 140px;
+	clear: both;
+	padding-top: 5px;
+}
+
+.options li:hover
+{
+	background: #08f;
+}
+#loadTexture
+{
+	display: none;
+}
+#aboutpage
+{
+	position: absolute;
+	z-index: 100;
+	width: 400px;
+	height: 200px;
+	top:0px;
+	left: 0px;
+	background: #eee;
+	display: none;
+	border: 1px #aaaaaa solid;
+}
+#aboutpage div
+{
+	width: 200px;
+	height: 70px;
+	margin: 65px 100px;
+}
+
+#aboutpage div img,#aboutpage div h1
+{
+	float: left;
+	margin: 10px;
+}
+
+#meshSelect,#fullscreen,#loading
+{
+	width: 100px;
+	margin-left: 10px;
+	margin-top: 5px;
+	height: 22px;
+	float: left;
+}
+#fullscreen
+{
+	width: 22px;
+	cursor: pointer;
+}
+#loading
+{
+	float: right;
+	margin-right: 10px;
+	display: none;
+}
+#sidebar
+{
+	position: absolute;
+	top:32px;
+	right: 0px;
+	bottom: 32px;
+	width: 300px;
+	background: #eee;
+	display: none;
+	border-top: 1px #aaaaaa solid;
+	border-bottom: 1px #aaaaaa solid;
+}
+
+#sidebar .close
+{
+	width: 20px;
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+}
+#sidebar font
+{
+	position: absolute;
+	top: 3px;
+}
+
+#sidebar ul
+{
+	width: 100%;
+	position: absolute;
+	top:30px;
+	bottom: 0px;
+	padding-left: 10px;
+}
+
+#sidebar ul li
+{
+	clear: both;
+	width: 100%;
+}
+
+#sidebar ul li div
+{
+	width: 50%;
+	float: left;
+}

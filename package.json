@@ -1,0 +1,10 @@
+{
+	"name" : "3D WebGIS",
+	"main" : "index.html",
+	"window" : {
+		"frame" : false,
+		"toolbar" : false,
+		"width" : "100%",
+		"height" : "100%"
+	}
+}
