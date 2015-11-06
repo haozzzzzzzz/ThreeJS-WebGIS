@@ -104,9 +104,9 @@ ul,ul li
 }
 #aboutpage div
 {
-	width: 200px;
+	width: 275px;
 	height: 70px;
-	margin: 65px 100px;
+	margin: 65px auto;
 }
 
 #aboutpage div img,#aboutpage div h1
